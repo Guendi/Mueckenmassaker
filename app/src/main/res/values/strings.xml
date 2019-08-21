@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mueckenmassaker</string>
+    <string name="leicht">Leicht</string>
+    <string name="willkommen_beim_m_ckenfangen">Willkommen beim Mückenfangen</string>
+    <string name="speichern">speichern</string>
+    <string name="neue_highscore_bite_name_eingeben">Neue Highscore!! BIte Name eingeben</string>
+    <string name="highscore">Highscore</string>
+    <string name="start">Start</string>
+</resources>

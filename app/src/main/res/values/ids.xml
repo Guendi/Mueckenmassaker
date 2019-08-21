@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="geburtsdatum" type="id"/>
+    <item name="tier" type="id"/>
+    <item name="vx" type="id"/>
+    <item name="vy" type="id"/>
+</resources>
