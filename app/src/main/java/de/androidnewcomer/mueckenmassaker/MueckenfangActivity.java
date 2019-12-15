@@ -48,7 +48,7 @@ public class MueckenfangActivity extends Activity implements OnClickListener, Ht
     private Button stufeEinfach;
     private Button stufeMittel;
     private Button stufeSchwer;
-    private static final String HIGHSCORE_SERVER_BASE_URL = "http://myhighscoreserver.appspot.com/highscoreserver";
+    private static final String HIGHSCORE_SERVER_BASE_URL = "https://www.guendi.ch/game/app.php";
     private static final String HIGHSCORESERVER_GAME_ID = "mueckenfang-";
     private String SCHWIERIGKEITSGRAD = "";
     private String highscoresHtml;
@@ -304,8 +304,8 @@ public class MueckenfangActivity extends Activity implements OnClickListener, Ht
                     URL url = new URL(HIGHSCORE_SERVER_BASE_URL
                             + "?game=" + HIGHSCORESERVER_GAME_ID + SCHWIERIGKEITSGRAD
                             + "&name=" + URLEncoder.encode(name, "utf-8")
-                            + "&points=" + Integer.toString(points)
-                            + "&max=100");
+                            + "&points=" + Integer.toString(points));
+                          //  + "&max=100"
                     Log.d("link","link "+url);
 
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -321,7 +321,7 @@ public class MueckenfangActivity extends Activity implements OnClickListener, Ht
                     }
 
                 } catch(IOException e) {
-                    ;
+
                 }
                 runOnUiThread(new Runnable() {
                     @Override
